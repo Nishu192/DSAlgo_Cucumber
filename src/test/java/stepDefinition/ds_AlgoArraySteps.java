@@ -23,6 +23,7 @@ public class ds_AlgoArraySteps extends BaseClass {
 		
 		hp=new HomePage_PF(BaseClass.getDriver());
 	    ap=new Arrays_PF(BaseClass.getDriver());
+	    BaseClass.navigateToPage("https://dsportalapp.herokuapp.com/home");
 	   hp.clickArray();
 	   LoggerLoad.info("User clicks  Get Started button below the array");
 	   
@@ -249,7 +250,7 @@ public class ds_AlgoArraySteps extends BaseClass {
 	@Then("User go back to {string} DS home page")
 	public void user_go_back_to_ds_home_page(String string) {
 		hp=new HomePage_PF(BaseClass.getDriver());
-		BaseClass.navigateToPage(string);
+		BaseClass.gotoHomePage();
 		LoggerLoad.info("User is on Home page");
 	}
 

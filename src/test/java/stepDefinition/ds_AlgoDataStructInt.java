@@ -1,11 +1,22 @@
 package stepDefinition;
 
+import java.io.ByteArrayInputStream;
+//import java.io.ByteArrayInputStream;
+import java.io.File;
+
+import org.junit.After;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.testng.Assert;
+//import org.testng.reporters.Files;
 
+import com.google.common.io.Files;
 
+import io.cucumber.java.Scenario;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.qameta.allure.Allure;
 import pagefactory.DSTryhere_PF;
 import pagefactory.DataStructureIntro_PF;
 import pagefactory.HomePage_PF;
@@ -17,7 +28,21 @@ public class ds_AlgoDataStructInt extends BaseClass{
 	HomePage_PF hp;
 	 DataStructureIntro_PF dp;
 	 DSTryhere_PF thp;
+	 Scenario scn;
 	 
+//	 @After
+//	    public void tearDown(Scenario scenario) {
+//	        System.out.println("Scenario status ======>"+scenario.getStatus());
+//	        if(scenario.isFailed()) {
+//	        	
+//	        	TakesScreenshot ts=(TakesScreenshot) BaseClass.getDriver();
+//	        	byte[] screenshot=ts.getScreenshotAs(OutputType.BYTES);
+//	        	scenario.attach(screenshot, "image/png",scenario.getName());
+//	        	            
+//	        }
+//	        getDriver().quit();
+//	    }
+
 	
 	@When("The user clicks  Get Started button below the Data structures-Introduction")
 	public void the_user_clicks_get_started_button_below_the_data_structures_introduction() {
@@ -72,7 +97,37 @@ public void the_user_clicks_practice_questions_link_of_ds()  {
 public void the_user_does_not_find_any_practice_problems_and_the_page_is_null() {
   
    System.out.println("The user sees blank page without any Questions that is the BUG");
-   BaseClass.navigateToPage("https://dsportalapp.herokuapp.com/home");
+
+	 Assert.assertEquals(false, true);
+//	 System.out.println("Scenario status ======>"+scn.getStatus());
+//     if(scn.isFailed()) {
+//     	
+//     	TakesScreenshot ts=(TakesScreenshot) BaseClass.getDriver();
+//     	byte[] screenshot=ts.getScreenshotAs(OutputType.BYTES);
+//     	scn.attach(screenshot, "image/png",scn.getName());
+//     	            
+//     }
+//     BaseClass.tearDown();
+	BaseClass.navigateToPage("https://dsportalapp.herokuapp.com/home");
+
+
+		 //String screenshotName=com.aventstack.extentreports.gherkin.model.Scenario.getGherkinName().replace(" ","_");
+		 
+//	 try {
+//		 Assert.assertEquals(false, true);
+//
+//		if(scn.isFailed()) {
+//			
+//			byte[] screenshot=((TakesScreenshot)BaseClass.getDriver()).getScreenshotAs(OutputType.BYTES);
+//			Allure.addAttachment("Failed Screenshot", new ByteArrayInputStream(screenshot));
+//			scn.attach(screenshot,"img/png",screenshotName);
+//	}
+//	 } catch (Exception e) {
+//	e.setStackTrace(null);
+//		}
+//   
+	// BaseClass.navigateToPage("https://dsportalapp.herokuapp.com/home");
+  	
    LoggerLoad.error("user does not find any practice problems");
 }
 

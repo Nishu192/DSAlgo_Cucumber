@@ -233,7 +233,7 @@ public void the_user_should_able_to_see_an_warning_message(String expMsg) {
     @Then("The user is not able to see error msg after entering invalid data")
     public void the_user_is_not_able_to_see_error_msg_after_entering_invalid_data() {
         rp.foundBUG();
-        LoggerLoad.error("The user is not able to see error msg after entering invalid data");
+               LoggerLoad.error("The user is not able to see error msg after entering invalid data");
     }
     @When("The user clicks Register button after entering a password with numeric data")
     public void the_user_clicks_register_button_after_entering_a_password_with_numeric_data(DataTable dataTable) {

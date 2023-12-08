@@ -1,4 +1,4 @@
-Feature: To Automate the page of Array
+Feature: E) To Automate the page of Array
 
   @Array_page
   Scenario: Home Page

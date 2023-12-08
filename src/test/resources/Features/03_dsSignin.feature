@@ -1,4 +1,4 @@
-Feature: to automate Signin page of DS_Algo
+Feature: C)To automate Signin page of DS_Algo
 
   Background: background
     Given The user is on the DS Algo Introduction Page

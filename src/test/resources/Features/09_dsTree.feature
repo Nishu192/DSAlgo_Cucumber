@@ -1,4 +1,4 @@
-Feature: Automatating Tree Module pages
+Feature: I)Automatating Tree Module pages
 
   @TreePage
   Scenario: Get started to Tree from DS Algo home page

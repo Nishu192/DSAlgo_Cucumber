@@ -1,4 +1,4 @@
-   Feature: Signing out from DS Algo Portal
+   Feature: K)Signing out from DS Algo Portal
    
    @SignOut
    Scenario: Signing out and Closing the browser

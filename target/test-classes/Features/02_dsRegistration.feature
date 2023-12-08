@@ -1,5 +1,5 @@
 @NotrunReg
-Feature: To Automate Registration page of DS_Algo
+Feature: B)To Automate Registration page of DS_Algo
 
   @RegistrationLink
   Scenario: DS Introduction page
@@ -71,9 +71,9 @@ Feature: To Automate Registration page of DS_Algo
     Given The user is on the new user registration page
     When The user clicks Register button after entering  with valid username, password and password confirmation in related textboxes
       | Username         | Password   | Password confirmation |
-      | fgrhdffg4590096y | teams123^& | teams123^&            |
+      | wefriendy333 | teams123^& | teams123^&            |
     Then The user should be redirected to Home Page of DS Algo
-    And The user should able to see  successful message "New Account Created. You are logged in as nkfepjvofok"  on  the DS Algo Home Page
+    And The user should able to see  successful message "New Account Created. You are logged in as wefriendy333"  on  the DS Algo Home Page
 
   @Signout
   Scenario: The User is signed out successfully

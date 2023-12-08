@@ -1,4 +1,4 @@
-Feature: To test the Queue page
+Feature: H)To test the Queue page
 
   Scenario: Enter into Queue page
     Given The user is on the DS Home page after logged in

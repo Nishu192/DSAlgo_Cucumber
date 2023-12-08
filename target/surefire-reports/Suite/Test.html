@@ -1,0 +1,1368 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>252/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Dec 07 23:32:45 EST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>125 seconds (125105 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Time Complexity Page", "D)To Automate the page of Data Structure"</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at stepDefinition.ds_AlgoDataStructInt.the_user_does_not_find_any_practice_problems_and_the_page_is_null(ds_AlgoDataStructInt.java:101)
+	at ✽.The user does not find any practice problems and the page is null(file:///C:/Users/enggn/eclipse-workspace/DSAlgo_Cucumber/src/test/resources/Features/04_dsDataStructInt.feature:58)
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1436146784", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1436146784'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1067)
+	at org.testng.Assert.assertEquals(Assert.java:1031)
+	at org.testng.Assert.assertEquals(Assert.java:1077)
+	at stepDefinition.ds_AlgoDataStructInt.the_user_does_not_find_any_practice_problems_and_the_page_is_null(ds_AlgoDataStructInt.java:101)
+	at ✽.The user does not find any practice problems and the page is null(file:///C:/Users/enggn/eclipse-workspace/DSAlgo_Cucumber/src/test/resources/Features/04_dsDataStructInt.feature:58)
+</pre></div></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Implement Linked List in Python page", "F)Automatating Linked List Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User go back to the previous page", "F)Automatating Linked List Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with Invalid data", "E) To Automate the page of Array"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with Invalid data", "F)Automatating Linked List Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with valid data", "E) To Automate the page of Array"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Types of Linked List page", "F)Automatating Linked List Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Home Page", "E) To Automate the page of Array"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Types of Binary Trees page", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User go back to the previous page", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with valid data", "H)To test the Queue page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page without data", "H)To test the Queue page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User go back to the previous page", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "DS Introduction page", "A) To Automate Introduction page of DS_Algo"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Terminologies page Link", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with valid data", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "DS Algo Introduction Page", "C)To automate Signin page of DS_Algo"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page without data", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Applications of Binary trees page Link", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with valid data", "J)Automatating Graph Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page without data", "E) To Automate the page of Array"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Implementation Of BST page", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "check user directed to tryeditor", "H)To test the Queue page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with Invalid data", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Graph page second link", "J)Automatating Graph Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with Invalid data", "G)To Automate  the Stack page of DS_Algo"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with Invalid data", "H)To test the Queue page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User go back to the previous page", "E) To Automate the page of Array"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page without data", "G)To Automate  the Stack page of DS_Algo"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User go back to the previous page", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "to test practice question link", "H)To test the Queue page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page without data", "E) To Automate the page of Array"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Traversal link of Linked List module", "F)Automatating Linked List Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "check user directed to tryeditor", "G)To Automate  the Stack page of DS_Algo"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Data Structure Home page", "D)To Automate the page of Data Structure"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with Invalid data", "F)Automatating Linked List Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User go back to the previous page", "H)To test the Queue page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page without data", "F)Automatating Linked List Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User go back to the DS Algo home page", "F)Automatating Linked List Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Implementation of Binary Trees page", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Array Page", "E) To Automate the page of Array"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User go back to Graph page", "J)Automatating Graph Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page without data", "H)To test the Queue page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Browser page", "A) To Automate Introduction page of DS_Algo"</td>
+<td></td>
+<td>6</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User go back to the previous page", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User Perform Operations on Stack page", "G)To Automate  the Stack page of DS_Algo"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with valid data", "E) To Automate the page of Array"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Tree page Practice Questions", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User go back to the previous page", "H)To test the Queue page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Practice Questions page", "E) To Automate the page of Array"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with Invalid data", "E) To Automate the page of Array"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with valid data", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Basic operations in Lists page", "E) To Automate the page of Array"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page without data", "F)Automatating Linked List Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page without data", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User go back to the previous page", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Graph page", "J)Automatating Graph Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Types of Trees page", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with Invalid data", "F)Automatating Linked List Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page without data", "F)Automatating Linked List Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with Invalid data", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Types of Trees page Link", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User go back to the previous page", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with valid data", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Time Complexity Page", "D)To Automate the page of Data Structure"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User go back to the previous page", "H)To test the Queue page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with Invalid data", "J)Automatating Graph Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with Invalid data", "H)To test the Queue page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with valid data", "F)Automatating Linked List Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Creating Linked LIst link of Linked List module", "F)Automatating Linked List Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User go back to the previous page", "E) To Automate the page of Array"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with valid data", "G)To Automate  the Stack page of DS_Algo"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page without data", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page without data", "E) To Automate the page of Array"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To test application on stack page", "G)To Automate  the Stack page of DS_Algo"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Overview of Trees page", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page without data", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "DS Introduction page", "A) To Automate Introduction page of DS_Algo"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with Invalid data", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page without data", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with valid data", "F)Automatating Linked List Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with valid data", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with valid data", "F)Automatating Linked List Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User go back to the previous page", "E) To Automate the page of Array"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with valid data", "H)To test the Queue page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To test practice questions on stack page", "G)To Automate  the Stack page of DS_Algo"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To test the Implementation using array", "H)To test the Queue page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Binary Tree Traversals page", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with valid data", "H)To test the Queue page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with valid data", "H)To test the Queue page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Binary Trees page Link", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User go back to the previous page", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User go back to the previous page", "E) To Automate the page of Array"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To perform Queue Operations", "H)To test the Queue page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with valid data", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Array in Python Page", "E) To Automate the page of Array"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Graph home page", "J)Automatating Graph Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To test the Implementation on stack page", "G)To Automate  the Stack page of DS_Algo"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page without data", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with Invalid data", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Traversals-Illustration page", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page without data", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get started to graph from DS Algo home page", "J)Automatating Graph Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Deletion link of Linked List module", "F)Automatating Linked List Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page without data", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page without data", "G)To Automate  the Stack page of DS_Algo"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with valid data", "G)To Automate  the Stack page of DS_Algo"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page without data", "G)To Automate  the Stack page of DS_Algo"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with valid data", "E) To Automate the page of Array"</td>
+<td></td>
+<td>1</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page without data", "E) To Automate the page of Array"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Graph Representations page", "J)Automatating Graph Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User go back to the DS Algo home page", "G)To Automate  the Stack page of DS_Algo"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with valid data", "E) To Automate the page of Array"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "check user directed to tryeditor", "H)To test the Queue page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Binary Trees page", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Implementation of Binary Trees page Link", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with Invalid data", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User go back to the previous page", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with valid data", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with valid data", "G)To Automate  the Stack page of DS_Algo"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Binary Search Trees page", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User go back to the previous page", "G)To Automate  the Stack page of DS_Algo"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "check user directed to tryeditor", "G)To Automate  the Stack page of DS_Algo"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User go back to the previous page", "E) To Automate the page of Array"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User go back to the DS Algo home page", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with valid data", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Implementation Of BST page Link", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User go back to Graph page", "J)Automatating Graph Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with valid data", "E) To Automate the page of Array"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with Invalid data", "D)To Automate the page of Data Structure"</td>
+<td></td>
+<td>2</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page without data", "D)To Automate the page of Data Structure"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Array Using List Page", "E) To Automate the page of Array"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with Invalid data", "G)To Automate  the Stack page of DS_Algo"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User go back to the previous page", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User go back to the previous page", "H)To test the Queue page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with Invalid data", "E) To Automate the page of Array"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page without data", "F)Automatating Linked List Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Practice Questions page", "E) To Automate the page of Array"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "DS Algo Introduction Page", "C)To automate Signin page of DS_Algo"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "check user directed to tryeditor", "H)To test the Queue page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with valid data", "F)Automatating Linked List Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with valid data", "D)To Automate the page of Data Structure"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with valid data", "E) To Automate the page of Array"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Traversal page", "F)Automatating Linked List Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User go back to the previous page", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "DS Algo Introduction Page", "C)To automate Signin page of DS_Algo"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Insertion page", "F)Automatating Linked List Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page without data", "J)Automatating Graph Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Signing out and Closing the browser", "K)Signing out from DS Algo Portal"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page without data", "F)Automatating Linked List Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User go back to the previous page", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Implementation in Python page", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Tree Traversals page Link", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with Invalid data", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User go back to the previous page", "G)To Automate  the Stack page of DS_Algo"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User Perform Implementation in python on queue page", "H)To test the Queue page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Introduction link of Linked List module", "F)Automatating Linked List Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User go back to the previous page", "F)Automatating Linked List Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Practice Questions page", "E) To Automate the page of Array"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "DS Algo home page", "G)To Automate  the Stack page of DS_Algo"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "check user is directed to tryeditor", "H)To test the Queue page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Applications of Binary trees page", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User go back to the previous page", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Insertion link of Linked List module", "F)Automatating Linked List Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Traversals-Illustration page Link", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with Invalid data", "J)Automatating Graph Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with valid data", "F)Automatating Linked List Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with Invalid data", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with Invalid data", "E) To Automate the page of Array"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with valid data", "F)Automatating Linked List Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page without data", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with Invalid data", "G)To Automate  the Stack page of DS_Algo"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "DS Algo Get Started page", "A) To Automate Introduction page of DS_Algo"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with Invalid data", "H)To test the Queue page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page without data", "H)To test the Queue page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User go back to the previous page", "F)Automatating Linked List Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Tree Traversals page", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with Invalid data", "E) To Automate the page of Array"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with valid data", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Practice Questions link of Linked List module", "F)Automatating Linked List Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with Invalid data", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on Python  editor page", "E) To Automate the page of Array"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with valid data", "E) To Automate the page of Array"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "check user directed to tryeditor", "G)To Automate  the Stack page of DS_Algo"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "DS Algo Introduction Page", "C)To automate Signin page of DS_Algo"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with Invalid data", "F)Automatating Linked List Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User go back to the DSHome page", "E) To Automate the page of Array"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Terminologies page", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User go back to the previous page", "F)Automatating Linked List Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "DS Algo Introduction Page", "C)To automate Signin page of DS_Algo"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with valid data", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page without data", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page without data", "E) To Automate the page of Array"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with Invalid data", "F)Automatating Linked List Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with Invalid data", "E) To Automate the page of Array"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get started to Tree from DS Algo home page", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Graph page Practice Questions", "J)Automatating Graph Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To test the Implementation.dq on queue page", "H)To test the Queue page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Deletion page", "F)Automatating Linked List Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with Invalid data", "H)To test the Queue page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page without data", "E) To Automate the page of Array"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Tree home page Link", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with valid data", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Enter into Queue page", "H)To test the Queue page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with Invalid data", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page without data", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Binary Tree Traversals page Link", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "DS Algo Introduction Page", "C)To automate Signin page of DS_Algo"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User go back to the previous page", "F)Automatating Linked List Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User go back to the DS Algo home page", "H)To test the Queue page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with Invalid data", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page without data", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "DS Algo Introduction Page", "C)To automate Signin page of DS_Algo"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page without data", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with valid data", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User go back to the previous page", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get started to Linked List from DS Algo home page", "F)Automatating Linked List Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Introduction page", "F)Automatating Linked List Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Creating Linked LIst page", "F)Automatating Linked List Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "DS Algo Introduction Page", "C)To automate Signin page of DS_Algo"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with valid data", "J)Automatating Graph Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Implementation in Python page Link", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with valid data", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User go back to the previous page", "E) To Automate the page of Array"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with Invalid data", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User go back to the previous page", "G)To Automate  the Stack page of DS_Algo"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Application of Array page", "E) To Automate the page of Array"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page without data", "F)Automatating Linked List Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User go back to the previous page", "D)To Automate the page of Data Structure"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Practice Questions page", "E) To Automate the page of Array"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with Invalid data", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Basic operations in Lists page", "E) To Automate the page of Array"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page without data", "H)To test the Queue page"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Binary Search Trees page Link", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Home Page", "D)To Automate the page of Data Structure"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with valid data", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User go back to the DS Algo home page", "J)Automatating Graph Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page without data", "J)Automatating Graph Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "DS Introduction page", "A) To Automate Introduction page of DS_Algo"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Types of Binary Trees page Link", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Array Page", "E) To Automate the page of Array"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with Invalid data", "E) To Automate the page of Array"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with Invalid data", "I)Automatating Tree Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Implement Linked List in Python link of Linked List module", "F)Automatating Linked List Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page without data", "F)Automatating Linked List Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User go back to the previous page", "F)Automatating Linked List Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page without data", "E) To Automate the page of Array"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with Invalid data", "F)Automatating Linked List Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with valid data", "F)Automatating Linked List Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Python Editor page with Invalid data", "F)Automatating Linked List Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User go back to the previous page", "F)Automatating Linked List Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Array Using List Page", "E) To Automate the page of Array"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+<tr>
+<td title='runner.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Types of Linked List link of Linked List module", "F)Automatating Linked List Module pages"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunnerTestng@333d4a8c</td></tr>
+</table><p>
+</body>
+</html>

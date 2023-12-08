@@ -1,4 +1,4 @@
-Feature: To Automate the page of Data Structure
+Feature: D)To Automate the page of Data Structure
 
   @HomePage
   Scenario: Home Page

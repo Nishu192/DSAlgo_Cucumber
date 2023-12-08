@@ -1,4 +1,4 @@
-Feature: Automatating Linked List Module pages
+Feature: F)Automatating Linked List Module pages
 
   @LinkedList_Page
   Scenario: Get started to Linked List from DS Algo home page

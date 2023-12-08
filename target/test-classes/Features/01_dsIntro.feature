@@ -1,4 +1,4 @@
-Feature: To Automate Introduction page of DS_Algo
+Feature: A) To Automate Introduction page of DS_Algo
 
 Background: 
     Given The Trio Team Challengers starts testing the Data Structure Algo portal.

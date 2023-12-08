@@ -18,7 +18,7 @@ public class TryEditorPageStep {
 	@Given("The user is on the tryEditor page")
 	public void the_user_is_on_the_try_editor_page() throws IOException {
 		tryEditor= new TryEditor_PF(BaseClass.getDriver());
-		   BaseClass.openPage("https://dsportalapp.herokuapp.com/tryEditor");
+		BaseClass.openPage("https://dsportalapp.herokuapp.com/tryEditor");
 		   SoftAssert softAssert=new SoftAssert();
 			String title=BaseClass.getTitle();
 		    //System.out.println("Verify tryEditor page title by Assertions.");
@@ -64,6 +64,7 @@ public class TryEditorPageStep {
 	public void the_user_is_on_try_editor_page() {
 		tryEditor= new TryEditor_PF(BaseClass.getDriver());
 		   BaseClass.openPage("https://dsportalapp.herokuapp.com/tryEditor");
+		 //BaseClass.gotoTryEditorPage();
 		   SoftAssert softAssert=new SoftAssert();
 			String title=BaseClass.getTitle();
 		    //System.out.println("Verify tryEditor page title by Assertions.");
@@ -133,7 +134,8 @@ public class TryEditorPageStep {
 		System.out.println("The user is already on tryEditor page"); 
 		LoggerLoad.info("User is on tryEditor page.");
 		tryEditor= new TryEditor_PF(BaseClass.getDriver());
-		   BaseClass.openPage("https://dsportalapp.herokuapp.com/tryEditor");
+		BaseClass.openPage("https://dsportalapp.herokuapp.com/tryEditor");
+		// BaseClass.gotoTryEditorPage();
 	}
 
 	@When("User able to see output in console")

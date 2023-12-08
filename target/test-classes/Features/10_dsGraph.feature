@@ -1,4 +1,4 @@
-Feature: Automatating Graph Module pages
+Feature: J)Automatating Graph Module pages
 
 @Graphpage
   Scenario: Get started to graph from DS Algo home page

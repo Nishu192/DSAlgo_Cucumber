@@ -86,32 +86,12 @@ public class BaseClass {
 		return driver;
 	}
 
-	// public static void setUpDriver() {
-	// if (Base==null) {
-	// Base = new BaseClass();
-	// }
-	// }
-	
-	
-//	 public static void tearDown(Scenario scenario) {
-//		 
-//	        //validate if scenario has failed
-//	        if(scenario.isFailed()) {
-//	            final byte[] screenshot = ((TakesScreenshot) BaseClass.getDriver()).getScreenshotAs(OutputType.BYTES);
-//	            scenario.attach(screenshot, "image/png", scenario.getName()); 
-//	        }   
-//	         
-//	        if(driver!=null) {
-//				driver.close();
-//				driver.quit();
-//			}
-//			driver=null;
-//	 }
-//	
-//	
-	
-	
-	
+	public static void gotoHomePage() {
+		driver.navigate().to("https://dsportalapp.herokuapp.com/home");
+	}
+	public static void gotoTryEditorPage() {
+		driver.navigate().to("https://dsportalapp.herokuapp.com/home");
+	}
 	
 	public static void tearDown() {
 		if(driver!=null) {

@@ -1,4 +1,4 @@
-Feature: To Automate  the Stack page of DS_Algo
+Feature: G)To Automate  the Stack page of DS_Algo
 
   @stack_homepage
   Scenario: DS Algo home page
